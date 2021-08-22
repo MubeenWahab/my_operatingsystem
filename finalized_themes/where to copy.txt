@@ -1,0 +1,27 @@
+# extract `macOSBigSur.tar.gz`
+tar -xvf macOSBigSur.tar.gz
+
+# For local users
+mv macOSBigSur ~/.icons/
+
+# For all users
+sudo mv macOSBigSur /usr/share/icons/
+
+# For plank
+sudo mkdir -p /.local/share/plank/themes
+
+Install Global Menu
+
+https://ubuntuhandbook.org/index.php/2015/02/enable-global-menu-xfce-desktop/
+
+sudo add-apt-repository -y ppa:webupd8team/mate
+
+2. Update system package cache, install “xfce4-topmenu-plugin” as well as other extra plugins.
+
+sudo apt-get update
+ 
+sudo apt-get install xfce4-topmenu-plugin libtopmenu-gtk3 libtopmenu-qt topmenu-mozilla-extension
+
+OR 
+
+sudo apt-get install xfce4-appmenu-plugin
