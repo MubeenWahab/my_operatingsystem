@@ -1,27 +1,16 @@
-# extract `macOSBigSur.tar.gz`
-tar -xvf macOSBigSur.tar.gz
+#!/bin/bash
 
-# For local users
-mv macOSBigSur ~/.icons/
+sudo apt update ; sudo apt install plank git -y
+git clone https://github.com/MubeenWahab/xfce_customization.git
+sudo rsync -avh xfce_customization/finalized_themes/* /usr/share/
+sudo apt-get install xfce4-appmenu-plugin -y
 
-# For all users
-sudo mv macOSBigSur /usr/share/icons/
+# Apply Wallpaper;
+# Change themes and icons from Appearance;
+# Change Windows decoration from Window Manager;
+# Change Cursors from Mouse and Touchpad;
+# Change FileManager buttons location from right to left;
+# Change Terminal Profile and add transparency;
+# Add globalMenu on the top panel and remove Windows Buttons;
+# Add panel2 for personalization.
 
-# For plank
-sudo mkdir -p /.local/share/plank/themes
-
-Install Global Menu
-
-https://ubuntuhandbook.org/index.php/2015/02/enable-global-menu-xfce-desktop/
-
-sudo add-apt-repository -y ppa:webupd8team/mate
-
-2. Update system package cache, install “xfce4-topmenu-plugin” as well as other extra plugins.
-
-sudo apt-get update
- 
-sudo apt-get install xfce4-topmenu-plugin libtopmenu-gtk3 libtopmenu-qt topmenu-mozilla-extension
-
-OR 
-
-sudo apt-get install xfce4-appmenu-plugin
