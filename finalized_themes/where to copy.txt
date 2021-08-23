@@ -12,5 +12,6 @@ sudo apt-get install xfce4-appmenu-plugin -y
 # Change FileManager buttons location from right to left;
 # Change Terminal Profile and add transparency;
 # Add globalMenu on the top panel and remove Windows Buttons;
-# Add panel2 for personalization.
+# Add panel2 for personalization;
+# Add workspaces from "workspaces".
 
