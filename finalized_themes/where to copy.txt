@@ -4,7 +4,7 @@ sudo apt update ; sudo apt install plank git -y
 git clone https://github.com/MubeenWahab/xfce_customization.git
 sudo rsync -avh xfce_customization/finalized_themes/* /usr/share/
 sudo apt-get install xfce4-appmenu-plugin -y
-sudo apt install openvpn openssh-server openssh-client nmap screen htop snapd -y
+sudo apt install openvpn openssh-server openssh-client nmap screen htop snap snapd net-tools -y
 sudo apt-get install network-manager-openvpn-gnome -y
 
 # Apply Wallpaper;
